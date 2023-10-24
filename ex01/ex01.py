@@ -5,7 +5,7 @@ consoante = 0
 if arquivo.readable():
     vogais = list('aãáàeèéiíìoõóòuúù')
     for item in arquivo.read().strip():
-        if item in vogais:
+        if item.lower() in vogais:
             vogal += 1
         elif item not in vogais and item not in ' ':
             consoante += 1
